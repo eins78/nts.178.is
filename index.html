@@ -1,1 +1,127 @@
-NTS178
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+  <title>NTS178</title>
+  <!-- make Mobile Safari play nice -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- make IE 8 play nice -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- fonts from google -->
+  <!-- http://www.google.com/fonts/#UsePlace:use/Collection:Arvo:700|Exo:900 -->
+  <link href='http://fonts.googleapis.com/css?family=Arvo:700|Exo:900|Pathway+Gothic+One' rel='stylesheet' type='text/css'>
+  <style type="text/css">
+  	body, h1 {
+    	font-family: sans-serif;
+    	text-align: center;
+    	font-weight: 900;
+    	font-size: 2em;
+    	color: black;
+    	margin: 0;
+  	}
+  	body {
+/*     	border-top: 0.5em solid black; */
+  	}
+  	a:link, a:visited {
+    	text-decoration: none;
+    	color: inherit;
+    	border-bottom: 0.25em solid black;
+  	}
+  	header {
+    	height: 3em;
+  	}
+  	h1 {
+      margin: 0.25em 0 0.75em 0;
+    	font-family: "Exo", sans-serif;
+  	}
+  	ul {
+    	list-style: none;
+    	padding-left: 0;
+  	}
+  	ul li {
+    	margin-bottom: 0.75em;
+  	}
+  	
+  	.nr1, body[data-selected="1"] h1  {
+    	font-family: "Arvo", sans-serif;
+    	color: hsla(24, 82%, 62%, 1);	
+  	}
+  	.nr1 a {
+      border-color: hsla(24, 82%, 62%, 1);
+  	}
+  	
+/* http://www.google.com/fonts/#ReviewPlace:refine/Collection:Dosis|News+Cycle|Pathway+Gothic+One|Montserrat|Raleway|Francois+One|Fjalla+One */
+  	.nr2, body[data-selected="2"] h1  {
+      font-family: 'Pathway Gothic One', sans-serif;
+    	color: hsla(1, 57%, 55%, 1);
+  	} 
+  	.nr2 {
+      font-size: 1.8em;
+  	} 
+  	.nr2 a {
+      border-color: hsla(1, 57%, 55%, 1);
+  	}
+  	.nr3, body[data-selected="3"] h1 {
+    	font-family: "Exo", sans-serif;
+      color: hsla(128, 50%, 59%, 1);
+  	}
+  	.nr3 {
+      font-size: 1.15em;
+  	}
+  	.nr3 a {
+      border-color: hsla(128, 50%, 59%, 1);
+  	}
+/*
+  	.nr4 {
+    	font-family: 'Montserrat', sans-serif;
+  	}
+*/
+  	a:hover {
+    	color: black;
+  	}
+
+
+  	@media screen and (min-width: 24em){
+      body {
+      	font-size: 3em;
+      }
+}
+    
+  </style>
+  <script>
+    function hover(element) {
+      document.body.setAttribute('data-selected', element.getAttribute('id'));
+    }
+    function unhover(element) {
+      document.body.setAttribute('data-selected', '0');
+    }
+    //var links = document.getElementsByTagName('a');
+    //Array.prototype.forEach.call(links, function(i){
+    //  console.log(i);
+    //})
+  </script>
+
+</head>
+  <body data-selected="0">
+    <header>
+      <h1><a href="#">NTS178</a></h1>
+    </header>
+    <ul id="mixtapes">
+      <li id="1" class="nr1" onmouseover="hover(this);" onmouseout="unhover(this);">
+        <a href="http://www.mixcloud.com/NTS178/nts178-mixtape-1/">
+          MIXTAPE#1
+        </a>
+      </li>
+      <li id="2" class="nr2" onmouseover="hover(this);" onmouseout="unhover(this);">
+        <a href="http://www.mixcloud.com/NTS178/nts178mixtape2-rc1/">
+          MIXTAPE#2
+        </a>
+      </li>
+      <li id="3" class="nr3" onmouseover="hover(this);" onmouseout="unhover(this);">
+        <a href="http://178.is/3585">
+          MIXTAPE#3
+        </a>
+      </li>
+    </ul>
+  </body>
+</html>
