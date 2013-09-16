@@ -12,7 +12,7 @@
   <link href='http://fonts.googleapis.com/css?family=Arvo:700|Exo:900|Pathway+Gothic+One' rel='stylesheet' type='text/css'>
   <style type="text/css">
   	body, h1 {
-    	font-family: sans-serif;
+    	font-family: "Helvetica", sans-serif;
     	text-align: center;
     	font-weight: 900;
     	font-size: 2em;
@@ -20,15 +20,28 @@
     	margin: 0;
   	}
   	body {
+/*     	min-height: 200em; */
+/*     	margin-top: 3em */
 /*     	border-top: 0.5em solid black; */
-  	}
-  	a:link, a:visited {
-    	text-decoration: none;
-    	color: inherit;
-    	border-bottom: 0.25em solid black;
   	}
   	header {
     	height: 3em;
+    	padding-bottom: 1em;
+  	}
+  	footer {
+  	  font-size: 0.5em;
+  	  line-height: 1.5em;
+    	margin-top: 6em;
+    	padding: 2em 0;
+    	border-top: 0.25em solid black;
+  	}
+  	a, a:link, a:visited {
+    	color: black;
+  	}
+  	a, a:link, a:visited {
+    	text-decoration: none;
+    	color: inherit;
+    	border-bottom: 0.25em solid black;
   	}
   	h1 {
       margin: 0.25em 0 0.75em 0;
@@ -44,16 +57,14 @@
   	
   	.nr1, body[data-selected="1"] h1  {
     	font-family: "Arvo", sans-serif;
-    	color: hsla(24, 82%, 62%, 1);	
+    	color: hsla(24, 82%, 62%, 1) !important;	
   	}
-  	.nr1 a {
+  	.nr1 a, .nr1 a:link, .nr1 a:visited {
       border-color: hsla(24, 82%, 62%, 1);
   	}
-  	
-/* http://www.google.com/fonts/#ReviewPlace:refine/Collection:Dosis|News+Cycle|Pathway+Gothic+One|Montserrat|Raleway|Francois+One|Fjalla+One */
   	.nr2, body[data-selected="2"] h1  {
       font-family: 'Pathway Gothic One', sans-serif;
-    	color: hsla(1, 57%, 55%, 1);
+    	color: hsla(1, 57%, 55%, 1) !important;
   	} 
   	.nr2 {
       font-size: 1.8em;
@@ -63,13 +74,13 @@
   	}
   	.nr3, body[data-selected="3"] h1 {
     	font-family: "Exo", sans-serif;
-      color: hsla(128, 50%, 59%, 1);
+      color: hsla(128, 50%, 59%, 0.5) !important;
   	}
   	.nr3 {
       font-size: 1.15em;
   	}
   	.nr3 a {
-      border-color: hsla(128, 50%, 59%, 1);
+      border-color: hsla(128, 50%, 59%, 0.5);
   	}
 /*
   	.nr4 {
@@ -77,6 +88,9 @@
   	}
 */
   	a:hover {
+    	color: blue;
+  	}
+  	#mixtapes a:hover, header a:hover {
     	color: black;
   	}
 
